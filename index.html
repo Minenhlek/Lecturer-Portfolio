@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>Simba Zengeni | Belgium Campus iTversity</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <link href="styles.css" rel="stylesheet" />
+    <script src="Script2.js"></script>
+</head>
+<body>
+
+    <!-- ========== NAVIGATION ========== -->
+    <nav id="nav">
+        <div class="logo">IS<span style="color:#fff">.</span></div>
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#home" onclick="closeNav()">Home</a></li>
+            <li><a href="#about" onclick="closeNav()">About</a></li>
+            <li><a href="#expertise" onclick="closeNav()">Expertise</a></li>
+            <li><a href="#achievements" onclick="closeNav()">Achievements</a></li>
+            <li><a href="#advice" onclick="closeNav()">Advice</a></li>
+            <li><a href="#contact" onclick="closeNav()">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="ham" onclick="toggleNav()">
+            <span></span><span></span><span></span>
+        </div>
+    </nav>
+
+    <!-- ========== HOME SECTION ========== -->
+    <section id="home">
+        <div class="grid-bg"></div>
+        <div class="glow"></div>
+        <div class="hero-content">
+            <div class="hero-badge"><i class="fas fa-university"></i> Belgium Campus iTversity</div>
+            <div class="avatar-container">
+                <div class="avatar-ring"></div>
+                <div class="avatar-ring2"></div>
+                <div class="avatar">
+                    <svg viewBox="0 0 160 160" width="160" height="160" xmlns="http://www.w3.org/2000/svg">
+                        <defs>
+                            <radialGradient id="bg" cx="50%" cy="50%" r="50%">
+                                <stop offset="0%" stop-color="#0d2040" />
+                                <stop offset="100%" stop-color="#050e1a" />
+                            </radialGradient>
+                            <linearGradient id="skin" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#8B5E3C" />
+                                <stop offset="100%" stop-color="#6B3F1F" />
+                            </linearGradient>
+                            <linearGradient id="shirt" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" stop-color="#1E90FF" />
+                                <stop offset="100%" stop-color="#0a4a8a" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="80" cy="80" r="80" fill="url(#bg)" />
+                        <circle cx="80" cy="80" r="75" fill="none" stroke="rgba(30,144,255,0.15)" stroke-width="1">
+                            <animate attributeName="r" values="72;76;72" dur="3s" repeatCount="indefinite" />
+                            <animate attributeName="opacity" values="0.15;0.3;0.15" dur="3s" repeatCount="indefinite" />
+                        </circle>
+                        <ellipse cx="80" cy="130" rx="38" ry="28" fill="url(#shirt)" />
+                        <path d="M65 110 L80 125 L95 110" fill="none" stroke="white" stroke-width="1.5" stroke-linecap="round" />
+                        <rect x="73" y="95" width="14" height="16" rx="5" fill="url(#skin)" />
+                        <ellipse cx="80" cy="78" rx="26" ry="28" fill="url(#skin)" />
+                        <path d="M54 72 Q56 48 80 46 Q104 48 106 72 Q100 58 80 57 Q60 58 54 72Z" fill="#1a0a00" />
+                        <ellipse cx="54" cy="78" rx="5" ry="7" fill="url(#skin)" />
+                        <ellipse cx="106" cy="78" rx="5" ry="7" fill="url(#skin)" />
+                        <ellipse cx="70" cy="76" rx="5" ry="5.5" fill="white" />
+                        <ellipse cx="90" cy="76" rx="5" ry="5.5" fill="white" />
+                        <circle cx="71" cy="77" r="3" fill="#1a0a00">
+                            <animate attributeName="cx" values="71;72;71;70;71" dur="4s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="91" cy="77" r="3" fill="#1a0a00">
+                            <animate attributeName="cx" values="91;92;91;90;91" dur="4s" repeatCount="indefinite" />
+                        </circle>
+                        <circle cx="72" cy="75" r="1" fill="white" opacity=".7" />
+                        <circle cx="92" cy="75" r="1" fill="white" opacity=".7" />
+                        <path d="M64 69 Q70 66 76 69" fill="none" stroke="#1a0a00" stroke-width="2" stroke-linecap="round" />
+                        <path d="M84 69 Q90 66 96 69" fill="none" stroke="#1a0a00" stroke-width="2" stroke-linecap="round" />
+                        <path d="M79 80 Q77 86 80 88 Q83 86 81 80" fill="none" stroke="rgba(0,0,0,.3)" stroke-width="1.2" />
+                        <path d="M71 94 Q80 100 89 94" fill="none" stroke="#4a2000" stroke-width="2" stroke-linecap="round">
+                            <animate attributeName="d" values="M71 94 Q80 100 89 94;M71 93 Q80 101 89 93;M71 94 Q80 100 89 94" dur="5s" repeatCount="indefinite" />
+                        </path>
+                        <rect x="62" y="71" width="16" height="12" rx="4" fill="none" stroke="#1E90FF" stroke-width="1.5" opacity=".8" />
+                        <rect x="82" y="71" width="16" height="12" rx="4" fill="none" stroke="#1E90FF" stroke-width="1.5" opacity=".8" />
+                        <line x1="78" y1="77" x2="82" y2="77" stroke="#1E90FF" stroke-width="1.5" opacity=".8" />
+                        <rect x="50" y="148" width="60" height="4" rx="2" fill="rgba(30,144,255,0.4)" />
+                        <rect x="55" y="135" width="50" height="13" rx="2" fill="rgba(30,144,255,0.15)" stroke="rgba(30,144,255,0.3)" stroke-width="1" />
+                        <rect x="57" y="137" width="46" height="9" rx="1" fill="rgba(30,144,255,0.1)" />
+                    </svg>
+                </div>
+            </div>
+            <h1 class="name"><span>Simba Zengeni</span></h1>
+            <p class="hero-role">Seniour Lecturer · Software Development & IT</p>
+            <p class="hero-desc">Inspiring the next generation of African tech innovators at Belgium Campus iTversity. Bridging the gap between theory and real-world programming.</p>
+            <div class="hero-btns">
+                <a href="#contact" class="btn btn-primary"><i class="fas fa-envelope"></i> Contact Me</a>
+                <a href="#about" class="btn btn-ghost"><i class="fas fa-user"></i> About Me</a>
+            </div>
+        </div>
+        <div class="scroll-down"><span>scroll</span><i class="fas fa-chevron-down"></i></div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about">
+        <div class="container">
+            <p class="sec-label reveal">Who I Am</p>
+            <h2 class="sec-title reveal">About Me</h2>
+            <div class="sec-line reveal"></div>
+            <div class="about-grid">
+                <div class="about-card reveal">
+                    <div class="about-avatar">👨🏽‍💻</div>
+                    <h3>Simba Zengeni</h3>
+                    <p>Seniour IT Lecturer<br>Belgium Campus iTversity</p>
+                    <div class="stats">
+                        <div class="stat-box"><strong>3+</strong><span>Years Teaching</span></div>
+                        <div class="stat-box"><strong>150+</strong><span>Students</span></div>
+                        <div class="stat-box"><strong>6</strong><span>Modules</span></div>
+                        <div class="stat-box"><strong>10+</strong><span>Projects</span></div>
+                    </div>
+                </div>
+                <div class="about-text reveal">
+                    <p>I am a passionate Junior Lecturer at Belgium Campus iTversity, dedicated to making programming and IT accessible to every student. My journey in technology started with a deep curiosity for how software shapes the world — and that curiosity drives my teaching every day.</p>
+                    <p>At Belgium Campus, I focus on creating an engaging, student-centred learning environment where complex concepts become clear through hands-on practice, real-world examples, and collaborative problem solving.</p>
+                    <p>I hold a degree in Information Technology and continue to grow professionally through research, industry engagement, and continuous learning in emerging technologies.</p>
+                    <h4 style="font-size:.9rem;margin:.8rem 0 .5rem;color:#5ab4ff;">Personal Interests</h4>
+                    <div class="tags">
+                        <span class="tag">💻 Open Source</span>
+                        <span class="tag">🤖 AI & ML</span>
+                        <span class="tag">🎮 Game Dev</span>
+                        <span class="tag">📱 Mobile Apps</span>
+                        <span class="tag">⚽ Football</span>
+                        <span class="tag">📚 Tech Writing</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== EXPERTISE SECTION ========== -->
+    <section id="expertise">
+        <div class="container">
+            <p class="sec-label reveal">What I Teach</p>
+            <h2 class="sec-title reveal">Teaching & Expertise</h2>
+            <div class="sec-line reveal"></div>
+            <div class="mod-grid">
+                <div class="mod-card reveal"><div class="mod-icon">⚙️</div><h3>C# & .NET Development</h3><p>Object-oriented programming, console apps, Windows Forms, and enterprise application development with C#.</p></div>
+                <div class="mod-card reveal"><div class="mod-icon">🌐</div><h3>Web Development</h3><p>HTML5, CSS3, JavaScript fundamentals through to responsive design, REST APIs, and modern front-end frameworks.</p></div>
+                <div class="mod-card reveal"><div class="mod-icon">🗄️</div><h3>Database Systems</h3><p>SQL, database design, normalization, stored procedures, and integration with application layers.</p></div>
+                <div class="mod-card reveal"><div class="mod-icon">📐</div><h3>Software Engineering</h3><p>SDLC, Agile, UML design, requirements analysis, testing strategies, and project documentation.</p></div>
+                <div class="mod-card reveal"><div class="mod-icon">🔒</div><h3>IT Fundamentals</h3><p>Networking basics, operating systems, hardware concepts, cybersecurity principles, and IT support.</p></div>
+                <div class="mod-card reveal"><div class="mod-icon">📊</div><h3>Programming Logic</h3><p>Problem solving, flowcharts, pseudocode, algorithms, and foundational programming for first-year students.</p></div>
+            </div>
+            <div class="skills-box reveal">
+                <h3>Technical Skills</h3>
+                <div class="skill"><div class="skill-top"><span>C# / .NET</span><span>90%</span></div><div class="track"><div class="fill" data-w="90"></div></div></div>
+                <div class="skill"><div class="skill-top"><span>HTML / CSS / JavaScript</span><span>88%</span></div><div class="track"><div class="fill" data-w="88"></div></div></div>
+                <div class="skill"><div class="skill-top"><span>SQL & Database Design</span><span>85%</span></div><div class="track"><div class="fill" data-w="85"></div></div></div>
+                <div class="skill"><div class="skill-top"><span>Python</span><span>75%</span></div><div class="track"><div class="fill" data-w="75"></div></div></div>
+                <div class="skill"><div class="skill-top"><span>Teaching & Curriculum Design</span><span>95%</span></div><div class="track"><div class="fill" data-w="95"></div></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ACHIEVEMENTS SECTION ========== -->
+    <section id="achievements">
+        <div class="container">
+            <p class="sec-label reveal">Recognition</p>
+            <h2 class="sec-title reveal">Achievements</h2>
+            <div class="sec-line reveal"></div>
+            <div class="ach-grid">
+                <div class="ach-card reveal"><div class="ach-ico ico-gold"><i class="fas fa-trophy"></i></div><div><h3>Student Choice Lecturer Award</h3><p>Recognised by students for exceptional teaching quality, approachability, and dedication to student success.</p><p class="ach-year">2024 · Belgium Campus iTversity</p></div></div>
+                <div class="ach-card reveal"><div class="ach-ico ico-blue"><i class="fas fa-code"></i></div><div><h3>Curriculum Development</h3><p>Co-developed the updated PRG261 Software Development module, integrating modern C# practices and project-based learning.</p><p class="ach-year">2023 · Belgium Campus</p></div></div>
+                <div class="ach-card reveal"><div class="ach-ico ico-red"><i class="fas fa-users"></i></div><div><h3>Hackathon Mentor</h3><p>Mentored student teams at the annual Belgium Campus Hackathon, with two mentored teams placing in the top 3.</p><p class="ach-year">2023 · Annual Hackathon</p></div></div>
+                <div class="ach-card reveal"><div class="ach-ico ico-gold"><i class="fas fa-graduation-cap"></i></div><div><h3>BSc IT Honours Graduate</h3><p>Completed Honours degree with distinction, specialising in software engineering and human-computer interaction.</p><p class="ach-year">2021 · University</p></div></div>
+                <div class="ach-card reveal"><div class="ach-ico ico-blue"><i class="fas fa-laptop-code"></i></div><div><h3>TechnoLab Project Lead</h3><p>Leading the Belgium Campus TechnoLab equipment booking system project — a real-world student learning initiative.</p><p class="ach-year">2025 · Belgium Campus</p></div></div>
+                <div class="ach-card reveal"><div class="ach-ico ico-red"><i class="fas fa-chalkboard-teacher"></i></div><div><h3>Industry Guest Lecturer</h3><p>Invited as guest lecturer at partner institutions to speak on modern software development practices and career pathways.</p><p class="ach-year">2024 · Industry Collaboration</p></div></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== ADVICE SECTION ========== -->
+    <section id="advice">
+        <div class="container">
+            <p class="sec-label reveal">Words of Wisdom</p>
+            <h2 class="sec-title reveal">Advice for Students</h2>
+            <div class="sec-line reveal"></div>
+            <div class="quotes-grid">
+                <div class="q-card reveal"><div class="q-mark">"</div><p>Don't wait until you feel ready to start coding. You become a developer by writing code — messy, broken, improving code. Start today.</p><span class="q-auth">— Simba Zengeni</span></div>
+                <div class="q-card reveal"><div class="q-mark">"</div><p>An error message is not your enemy. It is the compiler telling you exactly where to look. Learn to read errors before you Google them.</p><span class="q-auth">— Simba Zengeni</span></div>
+                <div class="q-card reveal"><div class="q-mark">"</div><p>Your GitHub profile is your CV. Every project you push, every commit you make, tells a story about who you are as a developer. Make it count.</p><span class="q-auth">— Simba Zengeni</span></div>
+                <div class="q-card reveal"><div class="q-mark">"</div><p>Ask questions in class. The student who asks the "obvious" question is the one saving 10 other students who were too shy to ask the same thing.</p><span class="q-auth">— Simba Zengeni</span></div>
+                <div class="q-card reveal"><div class="q-mark">"</div><p>Consistency beats intensity. Thirty minutes of coding every day will take you further than a twelve-hour session once a week.</p><span class="q-auth">— Simba Zengeni</span></div>
+                <div class="q-card reveal"><div class="q-mark">"</div><p>You are not just learning to code — you are learning to think. Problem-solving, logic, and resilience are skills that go far beyond the IDE.</p><span class="q-auth">— Simba Zengeni</span></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact">
+        <div class="container">
+            <p class="sec-label reveal">Get In Touch</p>
+            <h2 class="sec-title reveal">Contact</h2>
+            <div class="sec-line reveal"></div>
+            <div class="contact-grid">
+                <div class="contact-info reveal">
+                    <h3>Let's Connect</h3>
+                    <p>Whether you're a student needing guidance, a colleague interested in collaboration, or someone curious about Belgium Campus — feel free to reach out.</p>
+                    <div class="c-item"><div class="c-ico"><i class="fas fa-envelope"></i></div><div><strong>Email</strong><span>s.zingeni@belgiumcampus.ac.za</span></div></div>
+                    <div class="c-item"><div class="c-ico"><i class="fab fa-linkedin-in"></i></div><div><strong>LinkedIn</strong><span>linkedin.com/in/simbazingeni</span></div></div>
+                    <div class="c-item"><div class="c-ico"><i class="fab fa-github"></i></div><div><strong>GitHub</strong><span>github.com/simbazingeni</span></div></div>
+                    <div class="c-item"><div class="c-ico"><i class="fas fa-map-marker-alt"></i></div><div><strong>Affiliation</strong><span>Belgium Campus iTversity, Pretoria</span></div></div>
+                    <div class="c-item"><div class="c-ico"><i class="fas fa-clock"></i></div><div><strong>Office Hours</strong><span>Mon–Fri · 09:00–11:00 & 13:00–15:00</span></div></div>
+                </div>
+                <div class="reveal">
+                    <div class="contact-form">
+                        <div class="fg"><label>Full Name</label><input type="text" placeholder="Your name" /></div>
+                        <div class="fg"><label>Email</label><input type="email" placeholder="your@email.com" /></div>
+                        <div class="fg"><label>Subject</label><input type="text" placeholder="Module query / Collaboration..." /></div>
+                        <div class="fg"><label>Message</label><textarea placeholder="Write your message..."></textarea></div>
+                        <button class="btn btn-primary btn-full" onclick="sendForm(this)"><i class="fas fa-paper-plane"></i> Send Message</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer>
+        <p>© 2025 <span>Simba Zengeni</span> · Belgium Campus iTversity · Built with <span>❤</span> &amp; <span>JavaScript</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
